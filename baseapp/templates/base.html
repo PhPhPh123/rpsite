@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+
+<body>
+<h1>Главное меню будет тут</h1>
+
+{% block menu %}
+    <ul>
+    {% for m in main_menu %}
+        <li>{{ m }}</li>
+    {% endfor %}
+    </ul>
+{% endblock menu %}
+
+{% block rules_menu %}
+{% endblock rules_menu %}
+
+{% block content %}
+{% endblock content %}
+
+</body>
+
+</html>

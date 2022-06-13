@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block rules_menu %}
+    <h1>Список для страниц с отдельными группами правил</h1>
+    <ul>
+    {% for rule in rules %}
+        <li>{{ rule }}</li>
+    {% endfor %}
+    </ul>
+{% endblock rules_menu %}
+
+{% block content %}
+<h1>Титульная страницы списка правил в двух словах описывающая их и дающая ссылки по подразделы правил</h1>
+{% endblock content %}
+
