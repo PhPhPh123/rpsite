@@ -44,3 +44,27 @@ def schedule(request):
 
 def battles(request):
     return render(request, 'main_menu/rules/battles.html', {'title': title, 'main_menu': main_menu_list, 'rules': rules_list})
+
+
+def danger(request):
+    return render(request, 'main_menu/rules/danger_and_threat.html', {'title': title, 'main_menu': main_menu_list, 'rules': rules_list})
+
+
+def death(request):
+    return render(request, 'main_menu/rules/HT_and_death.html', {'title': title, 'main_menu': main_menu_list, 'rules': rules_list})
+
+
+def movement(request):
+    return render(request, 'main_menu/rules/movement.html', {'title': title, 'main_menu': main_menu_list, 'rules': rules_list})
+
+
+def psionics(request):
+    return render(request, 'main_menu/rules/Psionics_and_warp.html', {'title': title, 'main_menu': main_menu_list, 'rules': rules_list})
+
+
+def space_battles(request):
+    return render(request, 'main_menu/rules/space_battles.html', {'title': title, 'main_menu': main_menu_list, 'rules': rules_list})
+
+
+def economy(request):
+    return render(request, 'main_menu/rules/trade_and_economy.html', {'title': title, 'main_menu': main_menu_list, 'rules': rules_list})
