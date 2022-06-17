@@ -1,3 +1,26 @@
+{% load static %}
+
 body{
-    background: green;
+    background-image: url(baseapp/img/main_img.jpg)
+}
+
+aside {
+        float: left;
+        background: #000000;
+        width: 10%;
+        padding: 2.5%;
+        height: 50vh;
+        color: #fff;
+        border: 5px solid #4d4d4d;
+        }
+
+.main_menu_buttons {
+    background: #ff18;
+    width: 170%;
+    border: 1px solid #4d4d4d;
+    margin-left: -37px;
+}
+
+.aquila {
+    margin-left: -9px;
 }

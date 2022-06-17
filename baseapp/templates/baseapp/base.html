@@ -11,21 +11,55 @@
 </head>
 
 <body>
-<h1>Главное меню будет тут</h1>
+    <aside>
 
-{% block menu %}
-    <ul>
-    {% for m in main_menu %}
-        <li>{{ m }}</li>
-    {% endfor %}
-    </ul>
-{% endblock menu %}
+        <style>
+              body {
+               background: url({% static 'baseapp/img/main_img.jpeg' %});
+               background-size: 100%
+               };
+            </style>
 
-{% block rules_menu %}
-{% endblock rules_menu %}
+        {% block menu %}
+            <style>
+                .button_image img  {
+                border: 1px solid #55c5e9;
+                padding: 1px;
+                background: #666;
+                margin-right: 1px;
+                margin-bottom: 1px;
+                }
+            </style>
+            <p><img src="{% static 'baseapp/img/aquila.bmp' %}" alt="Aquila" width="115%" height="115%" class="aquila"></p>
+            <ul>
+                {% for m in main_menu %}
+                    <style>
+                        .main_menu_buttons{
+                        background: url({% static 'baseapp/img/metal.jpg' %});
+                        background-position: center;
+                        background-size: 150px 50px;
+                        }
+                    </style>
+                    <div class="main_menu_buttons">
+                        <li>
+                            <p><a href="{{ m }}.html">{{ m }}</a></p>
+                        </li><br>
+                    </div>
+                {% endfor %}
+            </ul>
+        {% endblock menu %}
 
-{% block content %}
-{% endblock content %}
+    </aside>
+
+    <main>
+
+        {% block rules_menu %}
+        {% endblock rules_menu %}
+
+        {% block content %}
+        {% endblock content %}
+
+    </main>
 
 </body>
 
