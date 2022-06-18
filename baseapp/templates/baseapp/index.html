@@ -1,5 +1,7 @@
 {% extends 'baseapp/base.html' %}
+{% load static %}
 
 {% block content %}
-<h1>Основной контент титульной страницы будет тут</h1>
-{% endblock content %}
+<h1> Ролевая игра по вселенной Warhammer 40000 by Джо</h1>
+<img src="{% static 'baseapp/img/index_img.png' %}" alt="inx" width="100%" height="92%">
+{% endblock %}
