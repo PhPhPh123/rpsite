@@ -1,0 +1,75 @@
+
+.rules_menu {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: stretch;
+    height: 80vh;
+}
+
+.danger{
+    border: 5px solid #4d4d4d;
+    background-image: url('rules_menu_img/danger_menu.jpg');
+    background-size: cover;
+    text-decoration: none;
+    color: #fff;
+}
+.danger:hover {
+        transform: scale(1.02)
+        }
+
+.movement{
+    border: 5px solid #4d4d4d;
+    background-image: url('rules_menu_img/movement_menu.jpg');
+    background-size: cover;
+    text-decoration: none;
+    color: #fff;
+}
+.movement:hover {
+        transform: scale(1.02)
+        }
+
+.death{
+    border: 5px solid #4d4d4d;
+    background-image: url('rules_menu_img/death_menu.jpg');
+    background-size: cover;
+    text-decoration: none;
+    color: #fff;
+}
+.death:hover {
+        transform: scale(1.02)
+        }
+
+.battles{
+    border: 5px solid #4d4d4d;
+    background-image: url('rules_menu_img/battle_menu.jpg');
+    background-size: cover;
+    text-decoration: none;
+    color: #fff;
+}
+.battles:hover {
+        transform: scale(1.02)
+        }
+
+.psionics{
+    border: 5px solid #4d4d4d;
+    background-image: url('rules_menu_img/psionics_menu.jpg');
+    background-size: cover;
+    text-decoration: none;
+    color: #fff;
+}
+.psionics:hover {
+        transform: scale(1.02)
+        }
+
+.economy{
+    border: 5px solid #4d4d4d;
+    background-image: url('rules_menu_img/trade_menu.jpg');
+    background-size: cover;
+    text-decoration: none;
+    color: #fff;
+}
+.economy:hover {
+        transform: scale(1.02)
+        }

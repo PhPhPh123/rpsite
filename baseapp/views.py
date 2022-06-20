@@ -9,13 +9,12 @@ main_menu_list = [{'menu_name': 'О ролке', 'url_name': 'about'},
                   {'menu_name': 'Бестиарий', 'url_name': 'enemies'},
                   {'menu_name': 'Расписание', 'url_name': 'schedule'}]
 
-rules_list = ['Сложность зон и угроза противников',
-              'Передвижение в варпе, космосе и на земле',
-              'Наземный бой и сражения на технике',
-              'Космические сражения',
+rules_list = ['Система сложности',
+              'Случайные события',
+              'Боевая система',
               'Торговля и экономика',
               'Психосилы и угрозы варпа',
-              'Живучесть игроков, предсмертные состояния и смерть']
+              'Механика выживания']
 
 context = {'title': title,
            'main_menu': main_menu_list,
@@ -64,10 +63,6 @@ def movement(request):
 
 def psionics(request):
     return render(request, 'baseapp/main_menu/rules/Psionics_and_warp.html', context=context)
-
-
-def space_battles(request):
-    return render(request, 'baseapp/main_menu/rules/space_battles.html', context=context)
 
 
 def economy(request):

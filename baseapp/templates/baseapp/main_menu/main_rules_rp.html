@@ -1,15 +1,43 @@
 {% extends 'baseapp/base.html' %}
+{% load static %}
 
-{% block rules_menu %}
-    <h1>Список для страниц с отдельными группами правил</h1>
-    <ul>
-    {% for rule in rules %}
-        <li>{{ rule }}</li>
-    {% endfor %}
-    </ul>
-{% endblock rules_menu %}
 
 {% block content %}
-<h1>Титульная страницы списка правил в двух словах описывающая их и дающая ссылки по подразделы правил</h1>
+    <div class="rules_menu">
+        <a href="{% url 'danger' %}" class="danger">
+            <div>
+                <h2>{{ rules.0}}</h2>
+            </div>
+        </a>
+
+        <a href="{% url 'movement' %}" class="movement">
+            <div>
+                <h2>{{ rules.1}}</h2>
+            </div>
+        </a>
+
+        <a href="{% url 'battles' %}" class="battles">
+            <div>
+                <h2>{{ rules.2}}</h2>
+            </div>
+        </a>
+
+        <a href="{% url 'economy' %}" class="economy">
+            <div>
+                <h2>{{ rules.3}}</h2>
+            </div>
+        </a>
+
+        <a href="{% url 'psionics' %}" class="psionics">
+            <div>
+                <h2>{{ rules.4}}</h2>
+            </div>
+        </a>
+        <a href="{% url 'death' %}" class="death">
+            <div>
+                <h2>{{ rules.5}}</h2>
+            </div>
+        </a>
+    </div>
 {% endblock content %}
 
