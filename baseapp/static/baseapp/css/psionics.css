@@ -1,0 +1,45 @@
+.psy{
+        display: grid;
+        grid-gap: 15px;
+        height: 100%;
+        grid-template-areas:
+            "A A F F"
+            "B B C C"
+            "B B C C"
+            "B B C C"
+            "D D E E"
+            "D D E E"
+            "D D E E";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.main_psy{
+    border: 5px solid #4d4d4d;
+    grid-area: A;
+}
+
+
+.biomant{
+    border: 5px solid #4d4d4d;
+    grid-area: B;
+}
+
+.telekinesis{
+    border: 5px solid #4d4d4d;
+    grid-area: C;
+}
+
+.telepathy{
+    border: 5px solid #4d4d4d;
+    grid-area: D;
+}
+
+.pyromant{
+    border: 5px solid #4d4d4d;
+    grid-area: E;
+}
+
+.demons{
+    border: 5px solid #4d4d4d;
+    grid-area: F;
+}
