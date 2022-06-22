@@ -1,0 +1,24 @@
+.movement_mech{
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: stretch;
+        height: 100%
+}
+
+.systems{
+    border: 5px solid #4d4d4d;
+}
+
+.terrains{
+    border: 5px solid #4d4d4d;
+}
+
+.walking{
+    border: 5px solid #4d4d4d;
+}
+
+.random_encounters{
+    border: 5px solid #4d4d4d;
+}
