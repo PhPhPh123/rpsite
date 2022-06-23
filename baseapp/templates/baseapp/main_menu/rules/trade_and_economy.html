@@ -1,13 +1,20 @@
 {% extends 'baseapp/main_menu/main_rules_rp.html' %}
+{% load static %}
 
 {% block content %}
+<style>
+    .content {
+    background-image: url({% static 'baseapp/img/background_economy_img.jpg' %});
+    background-size: 100% 100%;
+    }
+</style>
 <div class="trade_and_economy_mech">
     <div class="trade_mech">
-
+        <h6>Торговля</h6>
     </div>
 
     <div class="economy_mech">
-
+        <h6>Экономика</h6>
     </div>
 </div>
 {% endblock content %}
