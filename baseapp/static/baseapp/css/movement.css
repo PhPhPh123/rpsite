@@ -9,16 +9,20 @@
 
 .systems{
     border: 5px solid #4d4d4d;
+    background: #000000;
 }
 
 .terrains{
     border: 5px solid #4d4d4d;
+    background: #000000;
 }
 
 .walking{
     border: 5px solid #4d4d4d;
+    background: #000000;
 }
 
 .random_encounters{
     border: 5px solid #4d4d4d;
+    background: #000000;
 }

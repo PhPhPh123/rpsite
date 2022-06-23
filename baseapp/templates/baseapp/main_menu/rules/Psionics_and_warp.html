@@ -1,6 +1,13 @@
 {% extends 'baseapp/main_menu/main_rules_rp.html' %}
+{% load static %}
 
 {% block content %}
+<style>
+    .content {
+    background-image: url({% static 'baseapp/img/background_psionics_img.jpg' %});
+    background-size: 100% 100%;
+    }
+</style>
 <div class="psy">
     <div class="main_psy">
         <h6>Запас Пси-Энергии</h6>

@@ -16,30 +16,36 @@
 .main_psy{
     border: 5px solid #4d4d4d;
     grid-area: A;
+    background: #000000;
 }
 
 
 .biomant{
     border: 5px solid #4d4d4d;
     grid-area: B;
+    background: #000000;
 }
 
 .telekinesis{
     border: 5px solid #4d4d4d;
     grid-area: C;
+    background: #000000;
 }
 
 .telepathy{
     border: 5px solid #4d4d4d;
     grid-area: D;
+    background: #000000;
 }
 
 .pyromant{
     border: 5px solid #4d4d4d;
     grid-area: E;
+    background: #000000;
 }
 
 .demons{
     border: 5px solid #4d4d4d;
     grid-area: F;
+    background: #000000;
 }

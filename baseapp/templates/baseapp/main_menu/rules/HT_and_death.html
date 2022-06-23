@@ -1,5 +1,20 @@
 {% extends 'baseapp/main_menu/main_rules_rp.html' %}
+{% load static %}
 
 {% block content %}
-<h1>Механики смерти и потери сознания </h1>
+<style>
+    .content {
+    background-image: url({% static 'baseapp/img/background_death_img.jpg' %});
+    background-size: 100% 100%;
+    }
+</style>
+<div class="death_mech">
+    <div class="trauma">
+        <h6>Травмы</h6>
+    </div>
+
+    <div class="main_death">
+        <h6>Предсмертные состояния</h6>
+    </div>
+</div>
 {% endblock content %}
