@@ -1,0 +1,15 @@
+.trade_and_economy_mech{
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: stretch;
+        height: 100%
+}
+
+.trade_mech{
+    border: 5px solid #4d4d4d;
+}
+
+.economy_mech{
+    border: 5px solid #4d4d4d;
+}
