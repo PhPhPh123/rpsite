@@ -7,9 +7,10 @@
             ". . . ."
             "A A B B"
             "A A B B"
+            "A A B B"
             "A A B B";
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .trade_mech{

@@ -1,0 +1,43 @@
+.about_mech{
+        display: grid;
+        grid-gap: 15px;
+        height: 100%;
+        grid-template-areas:
+            "A A . . "
+            "B B C C"
+            "B B C C"
+            "D D E E"
+            "D D E E";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        }
+
+.about_common_mech{
+        border: 5px solid #4d4d4d;
+        background: #000000;
+        grid-area: A;
+}
+
+.player_resp_mech{
+        border: 5px solid #4d4d4d;
+        background: #000000;
+        grid-area: B;
+}
+
+.gm_resp_mech{
+        border: 5px solid #4d4d4d;
+        background: #000000;
+        grid-area: C;
+}
+
+.ban_mech{
+        border: 5px solid #4d4d4d;
+        background: #000000;
+        grid-area: D;
+}
+
+.agreed_mech{
+        border: 5px solid #4d4d4d;
+        background: #000000;
+        grid-area: E;
+}
