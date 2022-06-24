@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
-from baseapp.views import index, about, rules, maps, enemies, schedule
+from baseapp.views import index, about, rules, maps, schedule
 from . import settings
 
 urlpatterns = [
@@ -25,7 +25,6 @@ urlpatterns = [
     path('about/', about, name='about'),
     path('rules/', rules, name='rules'),
     path('maps/', maps, name='maps'),
-    path('enemies/', enemies, name='enemies'),
     path('schedule/', schedule, name='schedule'),
     path('rules/', include('baseapp.urls'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
