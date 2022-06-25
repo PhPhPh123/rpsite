@@ -2,6 +2,15 @@
 {% load static %}
 
 {% block content %}
-<h1> Ролевая игра по вселенной Warhammer 40000 by Джо</h1>
-<img src="{% static 'baseapp/img/index_img.png' %}" alt="inx" width="100%" height="92%">
+<style>
+    .content{
+            background-image: url({% static 'baseapp/img/index_img.jpg' %});
+            background-size: 100% 100%;
+    }
+</style>
+<div class="hello">
+    <div class="hello_mech">
+        <h1> Ролевая игра по вселенной Warhammer 40000 by Джо</h1>
+    </div>
+</div>
 {% endblock %}

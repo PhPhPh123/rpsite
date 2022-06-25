@@ -2,7 +2,7 @@
         display: grid;
         grid-gap: 15px;
         height: 105%;
-                grid-template-areas:
+        grid-template-areas:
             ". . . ."
             ". . . ."
             "A A B B"
