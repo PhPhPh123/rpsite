@@ -6,7 +6,7 @@ title = 'Вархаммер40к-РП-Ролка'
 main_menu_list = [{'menu_name': 'О ролке', 'url_name': 'about'},
                   {'menu_name': 'Правила', 'url_name': 'rules'},
                   {'menu_name': 'Карта', 'url_name': 'maps'},
-                  {'menu_name': 'Расписание', 'url_name': 'schedule'}]
+                  {'menu_name': 'Введение', 'url_name': 'introduction'}]
 
 rules_list = ['Система сложности',
               'Локации',
@@ -36,8 +36,8 @@ def maps(request):
     return render(request, 'baseapp/main_menu/map_rp.html', context=context)
 
 
-def schedule(request):
-    return render(request, 'baseapp/main_menu/schedule_rp.html', context=context)
+def introduction(request):
+    return render(request, 'baseapp/main_menu/introduction_rp.html', context=context)
 
 
 def battles(request):
