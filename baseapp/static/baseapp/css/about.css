@@ -12,32 +12,17 @@
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         }
 
-.about_common_mech{
+.about_common_mech, .player_resp_mech, .gm_resp_mech, .ban_mech, .agreed_mech{
         border: 5px solid #4d4d4d;
         background: #000000;
-        grid-area: A;
 }
 
-.player_resp_mech{
-        border: 5px solid #4d4d4d;
-        background: #000000;
-        grid-area: B;
-}
+.about_common_mech{grid-area: A}
 
-.gm_resp_mech{
-        border: 5px solid #4d4d4d;
-        background: #000000;
-        grid-area: C;
-}
+.player_resp_mech{grid-area: B}
 
-.ban_mech{
-        border: 5px solid #4d4d4d;
-        background: #000000;
-        grid-area: D;
-}
+.gm_resp_mech{grid-area: C}
 
-.agreed_mech{
-        border: 5px solid #4d4d4d;
-        background: #000000;
-        grid-area: E;
-}
+.ban_mech{grid-area: D}
+
+.agreed_mech{grid-area: E}

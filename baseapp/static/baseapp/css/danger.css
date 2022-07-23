@@ -6,12 +6,7 @@
         height: 100%
 }
 
-.danger_mech{
-    border: 5px solid #4d4d4d;
-    background: #000000;
-}
-
-.threat_mech{
+.danger_mech, .threat_mech{
     border: 5px solid #4d4d4d;
     background: #000000;
 }

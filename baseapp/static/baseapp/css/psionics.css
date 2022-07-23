@@ -13,39 +13,20 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-.main_psy{
-    border: 5px solid #4d4d4d;
-    grid-area: A;
-    background: #000000;
+
+.main_psy, .biomant, .telekinesis, .telepathy, .pyromant, .demons{
+        border: 5px solid #4d4d4d;
+        background: #000000;
 }
 
+.main_psy{grid-area: A}
 
-.biomant{
-    border: 5px solid #4d4d4d;
-    grid-area: B;
-    background: #000000;
-}
+.biomant{grid-area: B}
 
-.telekinesis{
-    border: 5px solid #4d4d4d;
-    grid-area: C;
-    background: #000000;
-}
+.telekinesis{grid-area: C}
 
-.telepathy{
-    border: 5px solid #4d4d4d;
-    grid-area: D;
-    background: #000000;
-}
+.telepathy{grid-area: D}
 
-.pyromant{
-    border: 5px solid #4d4d4d;
-    grid-area: E;
-    background: #000000;
-}
+.pyromant{grid-area: E}
 
-.demons{
-    border: 5px solid #4d4d4d;
-    grid-area: F;
-    background: #000000;
-}
+.demons{grid-area: F}

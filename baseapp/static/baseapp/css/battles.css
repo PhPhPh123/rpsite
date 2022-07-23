@@ -7,22 +7,7 @@
     height: 100%;
 }
 
-.accuracy{
-    border: 5px solid #4d4d4d;
-    background: #000000;
-}
-
-.сombat_maneuvers{
-    border: 5px solid #4d4d4d;
-    background: #000000;
-}
-
-.armor{
-    border: 5px solid #4d4d4d;
-    background: #000000;
-}
-
-.close_combat{
+.accuracy, .сombat_maneuvers, .armor, .close_combat{
     border: 5px solid #4d4d4d;
     background: #000000;
 }
