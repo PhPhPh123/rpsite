@@ -19,12 +19,13 @@ from django.conf.urls.static import static
 from baseapp.views import index, about, rules, maps, introduction
 from . import settings
 
+# паттерны послекорневой директории сайта
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='home'),
-    path('about/', about, name='about'),
-    path('rules/', rules, name='rules'),
-    path('maps/', maps, name='maps'),
-    path('introduction/', introduction, name='introduction'),
-    path('rules/', include('baseapp.urls'))
+    path('about/', about, name='about'),  # конечная страница о ролке
+    path('rules/', rules, name='rules'),  # подкаталог с правилами
+    path('maps/', maps, name='maps'),  # конечная страница с картой
+    path('introduction/', introduction, name='introduction'),  # конечная страница с вводной информацией
+    path('rules/', include('baseapp.urls'))  # расширение подкаталога
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
