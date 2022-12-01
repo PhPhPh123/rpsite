@@ -16,16 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
-from baseapp.views import index, about, rules, maps, introduction
+from baseapp.views import render_index, render_about, render_rules, render_maps, render_introduction
 from . import settings
 
 # паттерны послекорневой директории сайта
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index, name='home'),
-    path('about/', about, name='about'),  # конечная страница о ролке
-    path('rules/', rules, name='rules'),  # подкаталог с правилами
-    path('maps/', maps, name='maps'),  # конечная страница с картой
-    path('introduction/', introduction, name='introduction'),  # конечная страница с вводной информацией
-    path('rules/', include('baseapp.urls'))  # расширение подкаталога
+    path('', render_index, name='home'),
+    path('about/', render_about, name='about'),  # конечная страница о ролке
+    path('rules/', render_rules, name='rules'),  # подкаталог с правилами
+    path('maps/', render_maps, name='maps'),  # конечная страница с картой
+    path('introduction/', render_introduction, name='introduction'),  # конечная страница с вводной информацией
+    path('rules/', include('baseapp.urls'))  # расширение подкаталога пункта меню "Правила"
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

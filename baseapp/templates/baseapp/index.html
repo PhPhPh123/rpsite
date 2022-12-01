@@ -1,13 +1,15 @@
-{% extends 'baseapp/base.html' %}
-{% load static %}
+{% extends 'baseapp/base.html' %} <!-- Расширяюсь базовым шаблоном -->
+{% load static %} <!-- загружаю статические файлы -->
 
 {% block content %}
+<!-- Блок стиля шаблона, создающего бэкграунд картинку и устанавливающего ее на полный размер блока контента -->
 <style>
     .content{
             background-image: url({% static 'baseapp/img/index_img.jpg' %});
             background-size: 100% 100%;
     }
 </style>
+<!-- Блок-класс, который создает css-плитку grid со строчкой приветствия -->
 <div class="hello">
     <div class="hello_mech">
         <h1> Ролевая игра по вселенной Warhammer 40000 by Джо</h1>
