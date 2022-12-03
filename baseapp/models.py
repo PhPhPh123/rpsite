@@ -1,23 +1,31 @@
 from django.db import models
+from django.urls import reverse
 
 
-class Systems(models.Model):
+class System(models.Model):
     """
     Модель, описывающая таблицу с системами, существующими внутри ролевой игры
     """
     system_name = models.CharField(max_length=50)
-    system_description = models.TextField()
-    system_danger = models.ForeignKey('DangerZone', on_delete=models.CASCADE)
+    system_description = models.TextField(null=True)
+    system_danger = models.ForeignKey('DangerZone', on_delete=models.CASCADE, null=True)
+
+    def __str__(self):
+        return self.system_name
 
 
-class Worlds(models.Model):
+class World(models.Model):
     """
     Модель, описывающая таблицу с мирами, существующими внутри ролевой игры
     Каждый мир принадлежит к какой-либо системе и у модели на ее внешний ключ
     """
     world_name = models.CharField(max_length=50)
-    world_description = models.TextField()
-    system = models.ForeignKey('Systems', on_delete=models.CASCADE)
+    world_description = models.TextField(null=True)
+    world_image = models.ImageField(null=True, upload_to='world_images/')
+    system = models.ForeignKey('System', on_delete=models.CASCADE, null=True)
+
+    def __str__(self):
+        return self.world_name
 
 
 class DangerZone(models.Model):
@@ -27,4 +35,7 @@ class DangerZone(models.Model):
     Опасность отдельных миров описывается в отдельном проекте discord-бота
     """
     danger_name = models.CharField(max_length=50)
-    danger_description = models.TextField()
+    danger_description = models.TextField(null=True)
+
+    def __str__(self):
+        return self.danger_name
