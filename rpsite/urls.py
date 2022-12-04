@@ -28,4 +28,5 @@ urlpatterns = [
     path('maps/', render_maps, name='maps'),  # конечная страница с картой
     path('introduction/', render_introduction, name='introduction'),  # конечная страница с вводной информацией
     path('rules/', include('baseapp.urls'))  # расширение подкаталога пункта меню "Правила"
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + \
+    static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

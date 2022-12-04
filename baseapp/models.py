@@ -27,6 +27,10 @@ class World(models.Model):
     def __str__(self):
         return self.world_name
 
+    class Meta:
+        verbose_name = 'Мир'
+        verbose_name_plural = 'Миры'
+
 
 class DangerZone(models.Model):
     """
