@@ -30,6 +30,7 @@ class World(models.Model):
     class Meta:
         verbose_name = 'Мир'
         verbose_name_plural = 'Миры'
+        ordering = ('world_name',)
 
 
 class DangerZone(models.Model):

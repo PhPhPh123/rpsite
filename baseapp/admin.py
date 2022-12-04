@@ -11,8 +11,7 @@ class AdminWorld(admin.ModelAdmin):
     @staticmethod
     def get_image(obj):
         try:
-            return format_html('<img src="{}" width="200" height="200"/>'.format(obj.world_image.url))
+            return format_html('<img src="{}" width="300" height="200"/>'.format(obj.world_image.url))
         except ValueError:
             pass
-    get_image.short_description = 'Картинка'
 
