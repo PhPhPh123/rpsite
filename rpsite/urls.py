@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
-from baseapp.views import render_index, render_about, render_rules, render_maps, render_introduction
+from baseapp.views import render_index, render_about, render_rules, render_maps, render_introduction, render_system
 from . import settings
 
 # паттерны послекорневой директории сайта
@@ -25,8 +25,9 @@ urlpatterns = [
     path('', render_index, name='home'),
     path('about/', render_about, name='about'),  # конечная страница о ролке
     path('rules/', render_rules, name='rules'),  # подкаталог с правилами
-    path('maps/', render_maps, name='maps'),  # конечная страница с картой
+    path('map/', render_maps, name='maps'),  # конечная страница с картой
+    path('map/<slug:system_slug>/', render_system, name='system'),
     path('introduction/', render_introduction, name='introduction'),  # конечная страница с вводной информацией
-    path('rules/', include('baseapp.urls'))  # расширение подкаталога пункта меню "Правила"
+    path('rules/', include('baseapp.urls_rules'))  # расширение подкаталога пункта меню "Правила"
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + \
     static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

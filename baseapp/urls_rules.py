@@ -2,7 +2,7 @@ from django.urls import path
 from baseapp.views import render_battles, render_danger, render_death_and_ht
 from baseapp.views import render_movement, render_psionics, render_trade_and_economy
 
-# url-паттерны для пункта меню: "Правила", данные паттерны расширяются include из 'rpsite/urls.py'
+# url-паттерны для пункта меню: "Правила", данные паттерны расширяются include из 'rpsite/urls_rules.py'
 urlpatterns = [
     path('battles/', render_battles, name='battles'),
     path('danger/', render_danger, name='danger'),

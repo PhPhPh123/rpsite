@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+from .models import *
 
 """
 Контекстные переменные для рендера в шаблонах hmtl
@@ -101,3 +102,24 @@ def render_trade_and_economy(request):
     Данная функция рендерит страницу с описанием экономической системы внутри селектора правил
     """
     return render(request, 'baseapp/main_menu/rules/trade_and_economy.html', context=context)
+
+
+def render_system(request, system_slug):
+    """
+    Данная функция рендерит страницы с системами внутри карты
+    Args:
+        system_slug:
+        request:
+
+    Returns:
+    """
+
+    system = get_object_or_404(System, system_slug=system_slug)
+    worlds_in_system = World.objects.filter(system_id=system.pk)
+    system_context = {'title': title,
+                      'main_menu': main_menu_list,
+                      'rules': rules_list,
+                      'system': system,
+                      'worlds': worlds_in_system}
+
+    return render(request, 'baseapp/main_menu/worlds.html', context=system_context)

@@ -15,3 +15,8 @@ class AdminWorld(admin.ModelAdmin):
         except ValueError:
             pass
 
+
+@admin.register(System)
+class AdminSystem(admin.ModelAdmin):
+    list_display = ('system_name', 'system_description', 'system_slug')
+    prepopulated_fields = {'system_slug': ('system_name', )}

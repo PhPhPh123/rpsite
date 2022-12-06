@@ -7,11 +7,17 @@ class System(models.Model):
     Модель, описывающая таблицу с системами, существующими внутри ролевой игры
     """
     system_name = models.CharField(max_length=50)
+    system_slug = models.SlugField(unique=True, verbose_name='URL', null=True)
     system_description = models.TextField(null=True)
     system_danger = models.ForeignKey('DangerZone', on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return self.system_name
+
+    class Meta:
+        verbose_name = 'Система'
+        verbose_name_plural = 'Системы'
+        ordering = ('system_name',)
 
 
 class World(models.Model):

@@ -1,0 +1,18 @@
+{% extends 'baseapp/base.html' %}
+{% load static %}
+
+{% block content %}
+{{ system.system_name }}
+<br>
+{{ systems.system_description}}
+
+{% for world in worlds %}
+    {{ world }}
+    {% if world.world_image %}
+    <img src="{{ world.world_image.url }}" alt="">
+    {% endif %}
+    <br>
+
+{% endfor %}
+
+{% endblock content %}
