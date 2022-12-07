@@ -17,17 +17,20 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
 from baseapp.views import render_index, render_about, render_rules, render_maps, render_introduction, render_system
+from baseapp.views import render_register, render_register_success
 from . import settings
 
 # паттерны послекорневой директории сайта
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', render_index, name='home'),
-    path('about/', render_about, name='about'),  # конечная страница о ролке
+    path('about/', render_about, name='about'),  # страница о ролке
     path('rules/', render_rules, name='rules'),  # подкаталог с правилами
-    path('map/', render_maps, name='maps'),  # конечная страница с картой
-    path('map/<slug:system_slug>/', render_system, name='system'),
-    path('introduction/', render_introduction, name='introduction'),  # конечная страница с вводной информацией
-    path('rules/', include('baseapp.urls_rules'))  # расширение подкаталога пункта меню "Правила"
+    path('map/', render_maps, name='maps'),  # страница с картой
+    path('map/<slug:system_slug>/', render_system, name='system'),  # динамический url с системами на карте
+    path('introduction/', render_introduction, name='introduction'),  # страница с вводной информацией
+    path('rules/', include('baseapp.urls_rules')),  # расширение подкаталога пункта меню "Правила"
+    path('register/', render_register, name='register'),  # страница с формой регистрации
+    path('register-success/', render_register_success, name='resister-success')  # страница с подтверждением регистрации
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + \
     static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

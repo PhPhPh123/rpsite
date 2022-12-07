@@ -1,4 +1,6 @@
 from django.shortcuts import render, get_object_or_404
+
+from .forms import PlayerRegister
 from .models import *
 
 """
@@ -116,10 +118,19 @@ def render_system(request, system_slug):
 
     system = get_object_or_404(System, system_slug=system_slug)
     worlds_in_system = World.objects.filter(system_id=system.pk)
-    system_context = {'title': title,
-                      'main_menu': main_menu_list,
-                      'rules': rules_list,
-                      'system': system,
-                      'worlds': worlds_in_system}
+    worlds_tag = {'worlds': worlds_in_system}
+    system_context = {**context, **worlds_tag}
 
     return render(request, 'baseapp/main_menu/worlds.html', context=system_context)
+
+
+def render_register(request):
+    register_form = PlayerRegister()
+    form_tag = {'register_form': register_form}
+    register_context = {**context, **form_tag}
+
+    return render(request, 'baseapp/register.html', register_context)
+
+
+def render_register_success(request):
+    return render(request, 'baseapp/register_success.html', context)
