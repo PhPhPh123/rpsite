@@ -50,3 +50,11 @@ class DangerZone(models.Model):
 
     def __str__(self):
         return self.danger_name
+
+
+class PlayerRegister(models.Model):
+    player_name = models.CharField(max_length=30)
+    character_name = models.CharField(max_length=30)
+    character_power = models.IntegerField()
+    character_background = models.TextField(max_length=2000)
+    player_image = models.ImageField(null=True, upload_to='player_images/')

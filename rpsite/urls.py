@@ -31,6 +31,6 @@ urlpatterns = [
     path('introduction/', render_introduction, name='introduction'),  # страница с вводной информацией
     path('rules/', include('baseapp.urls_rules')),  # расширение подкаталога пункта меню "Правила"
     path('register/', render_register, name='register'),  # страница с формой регистрации
-    path('register-success/', render_register_success, name='resister-success')  # страница с подтверждением регистрации
+    path('register/register-success/', render_register_success, name='resister-success')  # страница с подтверждением регистрации
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + \
     static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

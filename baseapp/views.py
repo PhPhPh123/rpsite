@@ -1,6 +1,6 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 
-from .forms import PlayerRegister
+from .forms import PlayerRegisterForm
 from .models import *
 
 """
@@ -125,7 +125,14 @@ def render_system(request, system_slug):
 
 
 def render_register(request):
-    register_form = PlayerRegister()
+    if request.method == 'POST':
+        register_form = PlayerRegisterForm(request.POST, request.FILES)
+        if register_form.is_valid():
+            register_form.save()
+            return redirect('register-success/')
+    else:
+        register_form = PlayerRegisterForm()
+
     form_tag = {'register_form': register_form}
     register_context = {**context, **form_tag}
 
