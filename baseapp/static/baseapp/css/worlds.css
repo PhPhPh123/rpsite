@@ -1,0 +1,21 @@
+.world2{
+        display: grid;
+        grid-gap: 15px;
+        height: 100%;
+        grid-template-areas:
+            ". . . ."
+            ". . . ."
+            ". . . ."
+            "A A B B"
+            "A A B B";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.world-2-0, .world-2-1{
+        border: 5px solid #4d4d4d;
+        background: #000000;
+}
+
+.world-2-0 {grid-area: A}
+.world-2-1 {grid-area: B}

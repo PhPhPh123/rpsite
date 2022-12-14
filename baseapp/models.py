@@ -1,5 +1,4 @@
 from django.db import models
-from django.urls import reverse
 
 
 class System(models.Model):
@@ -57,4 +56,4 @@ class PlayerRegister(models.Model):
     character_name = models.CharField(max_length=30)
     character_power = models.IntegerField()
     character_background = models.TextField(max_length=2000)
-    player_image = models.ImageField(null=True, upload_to='player_images/')
+    character_image = models.ImageField(null=True, upload_to='player_images/')

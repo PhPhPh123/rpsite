@@ -118,10 +118,12 @@ def render_system(request, system_slug):
 
     system = get_object_or_404(System, system_slug=system_slug)
     worlds_in_system = World.objects.filter(system_id=system.pk)
-    worlds_tag = {'worlds': worlds_in_system}
+    worlds_amount = len(worlds_in_system)
+
+    worlds_tag = {'worlds': tuple(enumerate(worlds_in_system)), "worlds_amount": worlds_amount}
     system_context = {**context, **worlds_tag}
 
-    return render(request, 'baseapp/main_menu/worlds.html', context=system_context)
+    return render(request, 'baseapp/main_menu/systems.html', context=system_context)
 
 
 def render_register(request):

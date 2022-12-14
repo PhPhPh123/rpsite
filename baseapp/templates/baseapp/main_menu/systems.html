@@ -1,0 +1,39 @@
+{% extends 'baseapp/base.html' %}
+{% load static %}
+
+{% block content %}
+<h3>IN PROGRESS...</h3>
+
+        {% if worlds_amount == 0 %}
+            <div class="world0">
+            ZERO
+            </div>
+
+        {% elif worlds_amount == 1 %}
+            <div class="world1">
+            ONE
+            </div>
+
+        {% elif worlds_amount == 2 %}
+            <div class="world2">
+                {% for world in worlds %}
+                    <div class="world-2-{{ world.0 }}">
+                    {{ world.1 }}
+                    {% if world.1.world_image %}
+                    <img src="{{ world.1.world_image.url }}" alt="" height="200" width="300">
+                    {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+
+        {% elif worlds_amount == 3 %}
+            <div class="world3">
+            THREE
+            </div>
+
+        {% elif worlds_amount == 4 %}
+            <div class="world4">
+            FOUR
+            </div>
+        {% endif %}
+{% endblock content %}
