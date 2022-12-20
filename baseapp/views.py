@@ -13,7 +13,8 @@ title = 'Вархаммер40к-РП-Ролка'  # титульное назв�
 main_menu_list = [{'menu_name': 'О ролке', 'url_name': 'about'},
                   {'menu_name': 'Правила', 'url_name': 'rules'},
                   {'menu_name': 'Карта', 'url_name': 'maps'},
-                  {'menu_name': 'Введение', 'url_name': 'introduction'}]
+                  {'menu_name': 'Введение', 'url_name': 'introduction'},
+                  {'menu_name': 'Регистрация', 'url_name': 'register'}]
 
 # список плиток grid для пункта меню "Правила"
 rules_list = ['Система сложности',

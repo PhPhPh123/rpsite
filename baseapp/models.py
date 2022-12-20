@@ -16,7 +16,7 @@ class System(models.Model):
     class Meta:
         verbose_name = 'Система'
         verbose_name_plural = 'Системы'
-        ordering = ('system_name',)
+        ordering = ('system_name',)  # Сортировка по названию системы
 
 
 class World(models.Model):
@@ -35,7 +35,7 @@ class World(models.Model):
     class Meta:
         verbose_name = 'Мир'
         verbose_name_plural = 'Миры'
-        ordering = ('world_name',)
+        ordering = ('world_name',)  # Сортировка по названию мира
 
 
 class DangerZone(models.Model):
