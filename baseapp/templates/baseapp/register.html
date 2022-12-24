@@ -3,6 +3,14 @@
 
 {% block content %}
 <h3>IN PROGRESS...</h3>
+
+<style>
+.content {
+    background-image: url({% static 'baseapp/img/background_register.jpg' %});
+    background-size: 100% 100%;
+}
+</style>
+
 <form action="{% url 'register' %}" method="post" enctype="multipart/form-data">
     {% csrf_token %}
     {{ register_form.as_p }}

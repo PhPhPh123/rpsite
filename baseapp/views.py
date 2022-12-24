@@ -122,7 +122,8 @@ def render_system(request, system_slug):
     worlds_amount = len(worlds_in_system)
 
     worlds_tag = {'worlds': tuple(enumerate(worlds_in_system)), "worlds_amount": worlds_amount}
-    system_context = {**context, **worlds_tag}
+    system_tag = {'system': system}
+    system_context = {**context, **worlds_tag, **system_tag}
 
     return render(request, 'baseapp/main_menu/systems.html', context=system_context)
 
