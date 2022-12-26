@@ -27,8 +27,9 @@
                     <div class="world-1-{{ world.0 }}">
                     <div class="world-name"><h5>{{ world.1 }}</h5></div>
                     {% if world.1.world_image %}
-                    <img src="{{ world.1.world_image.url }}" alt="" height="200" width="300">
+                    <img src="{{ world.1.world_image.url }}" alt="" style="float: right;" height="80%" width="55%">
                     {% endif %}
+                    {{ world.1.world_description }}
                     </div>
                 {% endfor %}
             </div>
@@ -42,10 +43,11 @@
 
                 {% for world in worlds %}
                     <div class="world-2-{{ world.0 }}">
-                    <div class="world-name"><h5>{{ world.1 }}</h5></div>
-                    {% if world.1.world_image %}
-                    <img src="{{ world.1.world_image.url }}" alt="" height="200" width="300">
-                    {% endif %}
+                        <div class="world-name"><h5>{{ world.1 }}</h5></div>
+                        {% if world.1.world_image %}
+                        <img src="{{ world.1.world_image.url }}" alt="" style="float: right;" height="80%" width="55%">
+                        {% endif %}
+                        {{ world.1.world_description }}
                     </div>
                 {% endfor %}
             </div>
@@ -61,8 +63,9 @@
                     <div class="world-3-{{ world.0 }}">
                     <div class="world-name"><h5>{{ world.1 }}</h5></div>
                     {% if world.1.world_image %}
-                    <img src="{{ world.1.world_image.url }}" alt="" height="200" width="300">
+                    <img src="{{ world.1.world_image.url }}" alt="" style="float: right;" height="80%" width="55%">
                     {% endif %}
+                    {{ world.1.world_description }}
                     </div>
                 {% endfor %}
             </div>
@@ -79,8 +82,9 @@
                     <div class="world-4-{{ world.0 }}">
                     <div class="world-name"><h5>{{ world.1 }}</h5></div>
                     {% if world.1.world_image %}
-                    <img src="{{ world.1.world_image.url }}" alt="" height="200" width="300">
+                    <img src="{{ world.1.world_image.url }}" alt="" style="float: right;" height="80%" width="55%">
                     {% endif %}
+                    {{ world.1.world_description }}
                     </div>
                 {% endfor %}
             </div>

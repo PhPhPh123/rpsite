@@ -9,14 +9,10 @@
             ". . . . . ."
             ". . . . . .";
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-}
-
+        grid-template-rows: repeat(5, 1fr);}
 .system-description{
         border: 5px solid #4d4d4d;
-        background: #000000;
-}
-
+        background: #000000;}
 .system-description {grid-area: A}
 
 
@@ -31,14 +27,10 @@
             ". . B B . ."
             ". . . . . .";
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-}
-
+        grid-template-rows: repeat(5, 1fr);}
 .world-1-0, .system-description{
         border: 5px solid #4d4d4d;
-        background: #000000;
-}
-
+        background: #000000;}
 .system-description {grid-area: A}
 .world-1-0 {grid-area: B}
 
@@ -54,14 +46,10 @@
             ". B B C C ."
             ". B B C C .";
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-}
-
+        grid-template-rows: repeat(5, 1fr);}
 .world-2-0, .world-2-1, .system-description{
         border: 5px solid #4d4d4d;
-        background: #000000;
-}
-
+        background: #000000;}
 .system-description {grid-area: A}
 .world-2-0 {grid-area: B}
 .world-2-1 {grid-area: C}
@@ -78,14 +66,10 @@
             ". . D D . ."
             ". . D D . .";
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-}
-
+        grid-template-rows: repeat(5, 1fr);}
 .world-3-0, .world-3-1, .world-3-2, .system-description{
         border: 5px solid #4d4d4d;
-        background: #000000;
-}
-
+        background: #000000;}
 .system-description {grid-area: A}
 .world-3-0 {grid-area: B}
 .world-3-1 {grid-area: C}
@@ -103,14 +87,10 @@
             ". D D E E ."
             ". D D E E .";
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-}
-
+        grid-template-rows: repeat(5, 1fr);}
 .world-4-0, .world-4-1, .world-4-2, .world-4-3, .system-description{
         border: 5px solid #4d4d4d;
-        background: #000000;
-}
-
+        background: #000000;}
 .system-description {grid-area: A}
 .world-4-0 {grid-area: B}
 .world-4-1 {grid-area: C}
