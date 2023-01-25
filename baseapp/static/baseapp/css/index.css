@@ -2,7 +2,7 @@
         display: grid;
         grid-gap: 15px;
         height: 100%;
-        width: 120%;
+        width: 100%;
         grid-template-areas:
             ". A A A A ."
             ". . . . . ."

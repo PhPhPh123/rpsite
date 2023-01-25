@@ -1,19 +1,21 @@
 
 .left_panel {
+        position: relative;
         float: left;
         background: #000000;
-        width: 19vh;
-        padding: 2.5%;
-        height: 45vh;
+        width: 180px;
+        padding: 25px;
+        height: 450px;
         color: #fff;
         border: 5px solid #4d4d4d;
-        margin-left: 5px;
+        margin-left: 10px;
         }
 
 .main_menu_buttons {
-        margin-left: -65px;
+        position: relative;
+        margin-left: -45px;
         font-weight: bold;
-        font-size: 17px;
+        font-size: 120%;
         list-style: none;
         }
 
@@ -33,9 +35,9 @@
 
 .content {
         background: #000000;
-        width: 86.5%;
-        padding: 2.5%;
-        height: 90vh;
+        width: 1600px;
+        padding: 25px;
+        height: 900px;
         color: #fff;
         border: 5px solid #4d4d4d;
         margin-left: 220px;

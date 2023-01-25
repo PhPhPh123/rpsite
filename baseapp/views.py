@@ -55,7 +55,8 @@ def render_maps(request):
     """
     Данная фукнция рендерит страницу с основной картой субсектора
     """
-    return render(request, 'baseapp/main_menu/map_rp.html', context=context)
+    all_systems = {'all_systems': System.objects.all()}
+    return render(request, 'baseapp/main_menu/map_rp.html', context={**context, **all_systems})
 
 
 def render_introduction(request):

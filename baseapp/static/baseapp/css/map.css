@@ -1,7 +1,18 @@
-.system {
-    position: absolute;
+.map-system {
+    position: relative;
 }
+
 .avaja {
-    top: 57.1%;
-    left: 76.2%
+    top: 500px;
+    left: 200px;
+}
+
+.eliziya {
+    top: -500px;
+    left: 1500px;
+}
+
+.shadd-ur {
+    top: 150px;
+    left: 150px;
 }
