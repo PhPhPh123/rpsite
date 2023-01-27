@@ -1,18 +1,89 @@
-.map-system {
-    position: relative;
+.system-img {
+    width: 7%;
+    height: 7%;
 }
 
-.avaja {
-    top: 500px;
-    left: 200px;
-}
+.avaja {position: absolute; top: 572px; left: 1412px;}
 
-.eliziya {
-    top: -500px;
-    left: 1500px;
-}
+.anomaliya-u41{}
 
-.shadd-ur {
-    top: 150px;
-    left: 150px;
-}
+.anomaliya-vual{}
+
+.anomaliya-tetta{}
+
+.anomaliya-tishina{}
+
+.arkeya{}
+
+.arturaks{}
+
+.asgardiya {position: absolute; top: 156px; left: 973px;}
+
+.ajax{}
+
+.barbas{}
+
+.belgejze{}
+
+.boeviya{}
+
+.velantis{}
+
+.gamma-opsiya{}
+
+.gefest{}
+
+.gnolliya{}
+
+.dzharks{}
+
+.jova{}
+
+.karvaks{}
+
+.ksantifiya{}
+
+.last-houp{}
+
+.levoniya{}
+
+.majorka{}
+
+.mersiya{}
+
+.morkaya{}
+
+.mortiya{}
+
+.morfeya{}
+
+.myottlind{}
+
+.noaks{}
+
+.oyun{}
+
+.pella{}
+
+.praetoris{}
+
+.teja{}
+
+.terranus{}
+
+.tetta-varna{}
+
+.torstejn {position: absolute; top: 542px; left: 1374px;}
+
+.trakov{}
+
+.trevoris{}
+
+.shabbat{}
+
+.shadd-ur{}
+
+.eliziya{}
+
+
+

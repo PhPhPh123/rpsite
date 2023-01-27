@@ -10,29 +10,29 @@
     </style>
 
     {% for system in all_systems %}
-        <div class="map-system {{ system.system_slug }}">
-            <a href="/map/{{ system.system_slug }}">
-                {% if system.system_danger_id == 3 %}
-                    <img src="{% static 'baseapp/img/null_danger.png' %}" alt="null-danger" width="1.1%" height="1.1%">
+            <div class="{{ system.system_slug }}">
+                <a href="/map/{{ system.system_slug }}">
+                    {% if system.system_danger_id == 3 %}
+                        <img src="{% static 'baseapp/img/null_danger.png' %}" alt="null-danger" class="system-img">
 
-                {% elif system.system_danger_id == 1 %}
-                    <img src="{% static 'baseapp/img/green_danger.png' %}" alt="green-danger" width="1.1%" height="1.1%">
+                    {% elif system.system_danger_id == 1 %}
+                        <img src="{% static 'baseapp/img/green_danger.png' %}" alt="green-danger" class="system-img">
 
-                {% elif system.system_danger_id == 4 %}
-                    <img src="{% static 'baseapp/img/blue_danger.png' %}" alt="blue-danger" width="1.1%" height="1.1%">
+                    {% elif system.system_danger_id == 4 %}
+                        <img src="{% static 'baseapp/img/blue_danger.png' %}" alt="blue-danger" class="system-img">
 
-                {% elif system.system_danger_id == 5 %}
-                    <img src="{% static 'baseapp/img/purple_danger.png' %}" alt="purple-danger" width="1.1%" height="1.1%">
+                    {% elif system.system_danger_id == 5 %}
+                        <img src="{% static 'baseapp/img/purple_danger.png' %}" alt="purple-danger" class="system-img">
 
-                {% elif system.system_danger_id == 2 %}
-                    <img src="{% static 'baseapp/img/red_danger.png' %}" alt="red-danger" width="1.1%" height="1.1%">
+                    {% elif system.system_danger_id == 2 %}
+                        <img src="{% static 'baseapp/img/red_danger.png' %}" alt="red-danger" class="system-img">
 
-                {% elif system.system_danger_id == 6 %}
-                    <img src="{% static 'baseapp/img/unknown_danger.png' %}" alt="unknown-danger" width="1.1%" height="1.1%">
+                    {% elif system.system_danger_id == 6 %}
+                        <img src="{% static 'baseapp/img/unknown_danger.png' %}" alt="unknown-danger" class="system-img">
 
-                {% endif %}
-            </a>
-        </div>
+                    {% endif %}
+                </a>
+            </div>
     {% endfor %}
 
 {% endblock content %}
