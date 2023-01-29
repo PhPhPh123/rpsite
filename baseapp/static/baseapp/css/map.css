@@ -1,89 +1,90 @@
-.system-img {
-    width: 7%;
-    height: 7%;
-}
+/*
+В данном CSS находятся селекторы каждой отдельной системы чтобы поместить ее на общую карту согласно необходимых координат
+*/
 
 .avaja {position: absolute; top: 572px; left: 1412px;}
 
-.anomaliya-u41{}
+.anomaliya-u41 {position: absolute; top: 217px; left: 1373px;}
 
-.anomaliya-vual{}
+.anomaliya-vual{position: absolute; top: 397px; left: 507px;}
 
-.anomaliya-tetta{}
+.anomaliya-tetta{position: absolute; top: 181px; left: 694px;}
 
-.anomaliya-tishina{}
+.anomaliya-tishina{position: absolute; top: 655px; left: 1494px;}
 
-.arkeya{}
+.arkeya{position: absolute; top: 531px; left: 1064px;}
 
-.arturaks{}
+.arturaks{position: absolute; top: 185px; left: 1156px;}
 
 .asgardiya {position: absolute; top: 156px; left: 973px;}
 
-.ajax{}
+.ajax{position: absolute; top: 757px; left: 1235px;}
 
-.barbas{}
+.barbas{position: absolute; top: 688px; left: 1078px;}
 
-.belgejze{}
+.belgejze{position: absolute; top: 517px; left: 1563px;}
 
-.boeviya{}
+.boeviya{position: absolute; top: 427px; left: 945px;}
 
-.velantis{}
+.brabant{position: absolute; top: 513px; left: 1230px;}
 
-.gamma-opsiya{}
+.velantis{position: absolute; top: 512px; left: 935px;}
 
-.gefest{}
+.gamma-opsiya{position: absolute; top: 462px; left: 1312px;}
 
-.gnolliya{}
+.gefest{position: absolute; top: 312px; left: 1434px;}
 
-.dzharks{}
+.gnolliya{position: absolute; top: 504px; left: 615px;}
 
-.jova{}
+.dzharks{position: absolute; top: 609px; left: 1336px;}
 
-.karvaks{}
+.jova{position: absolute; top: 420px; left: 1374px;}
 
-.ksantifiya{}
+.karvaks{position: absolute; top: 510px; left: 1482px;}
 
-.last-houp{}
+.ksantifiya{position: absolute; top: 756px; left: 1004px;}
 
-.levoniya{}
+.last-houp{position: absolute; top: 393px; left: 924px;}
 
-.majorka{}
+.levoniya{position: absolute; top: 583px; left: 765px;}
 
-.mersiya{}
+.majorka{position: absolute; top: 440px; left: 1461px;}
 
-.morkaya{}
+.mersiya{position: absolute; top: 658px; left: 1157px;}
 
-.mortiya{}
+.morkaya{position: absolute; top: 335px; left: 377px;}
 
-.morfeya{}
+.mortiya{position: absolute; top: 707px; left: 803px;}
 
-.myottlind{}
+.morfeya{position: absolute; top: 475px; left: 522px;}
 
-.noaks{}
+.myottlind{position: absolute; top: 667px; left: 1295px;}
 
-.oyun{}
+.noaks{position: absolute; top: 661px; left: 995px;}
 
-.pella{}
+.oyun{position: absolute; top: 435px; left: 1327px;}
 
-.praetoris{}
+.pella{position: absolute; top: 343px; left: 1402px;}
 
-.teja{}
+.praetoris{position: absolute; top: 362px; left: 703px;}
 
-.terranus{}
+.teja{position: absolute; top: 711px; left: 1356px;}
 
-.tetta-varna{}
+.terranus{position: absolute; top: 686px; left: 897px;}
+
+.tetta-varna{position: absolute; top: 224px; left: 1253px;}
 
 .torstejn {position: absolute; top: 542px; left: 1374px;}
 
-.trakov{}
+.trakov{position: absolute; top: 724px; left: 1277px;}
 
-.trevoris{}
+.trevoris{position: absolute; top: 497px; left: 1207px;}
 
-.shabbat{}
+.shabbat{position: absolute; top: 584px; left: 1582px;}
 
-.shadd-ur{}
+.shadd-ur{position: absolute; top: 236px; left: 1172px;}
 
-.eliziya{}
+.eliziya{position: absolute; top: 122px; left: 878px;}
 
 
 
