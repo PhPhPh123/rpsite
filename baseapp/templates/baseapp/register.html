@@ -2,18 +2,54 @@
 {% load static %}
 
 {% block content %}
-<h3>IN PROGRESS...</h3>
 
-<style>
-.content {
-    background-image: url({% static 'baseapp/img/background_register.jpg' %});
-    background-size: 100% 100%;
-}
-</style>
+    <style>
+        .content {
+            background-image: url({% static 'baseapp/img/background_register.jpg' %});
+            background-size: 100% 100%;
+            }
+    </style>
 
-<form action="{% url 'register' %}" method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{ register_form.as_p }}
-    <button type="submit">Отправить</button>
-</form>
+    <div class="register">
+
+        <div class="registration_title">
+            <h3>Регистрация игроков</h3>
+        </div>
+
+        <form action="{% url 'register' %}" method="post" enctype="multipart/form-data" class="register_form">
+            {% csrf_token %}
+
+            <div class="register_player_name_form">
+                <label>Ник игрока:</label><br>
+                {{ register_form.player_name }}
+            </div>
+
+            <div class="register_character_name">
+                <label>Имя персонажа:</label><br>
+                {{ register_form.character_name }}
+            </div>
+
+            <div class="register_background_form">
+                <label>История персонажа:</label><br>
+                {{ register_form.character_background }}
+            </div>
+
+            <div class="register_character_power_form">
+                <label>Мощь персонажа:</label><br>
+                {{ register_form.character_power }}
+            </div>
+
+            <div class="register_character_image">
+                <label>Картинка персонажа:</label><br>
+                {{ register_form.character_image }}
+            </div>
+
+            <div class="register_password">
+                <label>Пароль Гма:</label><br>
+                {{ register_form.registration_password }}
+            </div>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
 {% endblock content %}

@@ -19,5 +19,5 @@ class PlayerRegisterForm(forms.ModelForm):
     class Meta:
         model = PlayerRegister
         fields = '__all__'
-        widgets = {'character_background': forms.Textarea(attrs={'cols': 200, 'raws': 100})}
+        widgets = {'character_background': forms.Textarea(attrs={'cols': 80, 'raws': 100})}
 
