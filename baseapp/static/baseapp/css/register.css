@@ -5,25 +5,22 @@
         grid-template-areas:
             ". . B . ."
             ". . . . ."
+            ". A A A ."
+            ". A A A ."
+            ". A A A ."
             ". . . . ."
-            ". . . . ."
-            ". A A A ."
-            ". A A A ."
-            ". A A A ."
-            ". A A A ."
             ". . . . .";
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         }
 
-.register_form, .registration_title{
+.register_form, .registration_title, .register_submit{
         border: 5px solid #4d4d4d;
         background: #000000;
         }
 
 .register_form{grid-area: A;}
 
-.registration_title{grid-area: B;}
+.registration_title{grid-area: B; text-align: center;}
 
-.register_background_form {float: right; float: top;}
-.register_character_image {float: right;}
+.register_background_form {position: absolute; top: 319px; left: 880px;}
