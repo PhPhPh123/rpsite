@@ -1,4 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
+from django.core.mail import EmailMessage
+from django.core.mail.backends import smtp
 
 from .forms import PlayerRegisterForm
 from .models import *
@@ -133,6 +135,16 @@ def render_register(request):
     if request.method == 'POST':
         register_form = PlayerRegisterForm(request.POST, request.FILES)
         if register_form.is_valid():
+            subject, from_email, to = 'player', 'apxujiy3@mail.ru', 'sga1702@mail.ru'
+            text_content = '123'
+            # text_content = [register_form.cleaned_data['player_name'],
+            #                 register_form.cleaned_data['character_name'],
+            #                 register_form.cleaned_data['character_power'],
+            #                 register_form.cleaned_data['character_background'],
+            #                 register_form.cleaned_data['character_image']]
+            email = EmailMessage(subject, text_content, from_email, [to])
+            email.send()
+
             register_form.save()
             return redirect('register-success/')
     else:
