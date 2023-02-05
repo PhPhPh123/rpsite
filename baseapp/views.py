@@ -135,18 +135,21 @@ def render_register(request):
     if request.method == 'POST':
         register_form = PlayerRegisterForm(request.POST, request.FILES)
         if register_form.is_valid():
+            register_form.save()
+
             subject, from_email, to = 'player', 'apxujiy3@gmail.com', 'sga1702@mail.ru'
-            text_content = {'player_name': register_form.cleaned_data['player_name'],
+            text_context = {'player_name': register_form.cleaned_data['player_name'],
                             'character_name': register_form.cleaned_data['character_name'],
                             'character_power': register_form.cleaned_data['character_power'],
+                            'character_image': register_form.cleaned_data['character_image'],
                             'character_background': register_form.cleaned_data['character_background'],
                             }
-            html_email = render_to_string('baseapp/register_email.html', text_content)
+            html_email = render_to_string('baseapp/register_email.html', text_context)
             email = EmailMessage(subject, from_email=from_email, to=[to, ])
             email.attach(content=html_email, mimetype='text/html')
+            email.attach_file(path='media/player_images/' + str(text_context['character_image']))
             email.send()
 
-            register_form.save()
             return redirect('register-success/')
     else:
         register_form = PlayerRegisterForm()
